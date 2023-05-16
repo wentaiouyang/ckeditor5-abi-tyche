@@ -6,6 +6,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
+import CKBox from '@ckeditor/ckeditor5-ckbox/src/ckbox.js';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
@@ -19,10 +20,9 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
 import List from '@ckeditor/ckeditor5-list/src/list.js';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed.js';
-import Mention from '@ckeditor/ckeditor5-mention/src/mention.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js';
-import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
+import PictureEditing from '@ckeditor/ckeditor5-image/src/pictureediting.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
@@ -34,6 +34,7 @@ Editor.builtinPlugins = [
 	Autoformat,
 	BlockQuote,
 	Bold,
+	CKBox,
 	CloudServices,
 	Essentials,
 	Heading,
@@ -47,10 +48,9 @@ Editor.builtinPlugins = [
 	Link,
 	List,
 	MediaEmbed,
-	Mention,
 	Paragraph,
 	PasteFromOffice,
-	SourceEditing,
+	PictureEditing,
 	Table,
 	TableToolbar,
 	TextTransformation
@@ -62,7 +62,6 @@ Editor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
-			'sourceEditing',
 			'bold',
 			'italic',
 			'link',
@@ -80,7 +79,7 @@ Editor.defaultConfig = {
 			'redo'
 		]
 	},
-	language: 'en-au',
+	language: 'en',
 	image: {
 		toolbar: [
 			'imageTextAlternative',
