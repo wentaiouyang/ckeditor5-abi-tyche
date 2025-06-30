@@ -2,7 +2,7 @@
   "name": "@abi-tech/ckeditor5-tyche",
   "author": "abi-tyche",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": false,
   "main": "./build/ckeditor.js",
@@ -29,7 +29,7 @@
     "@ckeditor/ckeditor5-typing": "^37.1.0"
   },
   "devDependencies": {
-	"css-loader": "^5.2.7",
+    "css-loader": "^5.2.7",
     "postcss": "^8.4.22",
     "postcss-loader": "^4.3.0",
     "raw-loader": "^4.0.2",
